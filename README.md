@@ -1,2 +1,2 @@
 # WC2_Portfolio
-Corse Progress portfolio page
+Course Progress portfolio page.
