@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +5,92 @@ body {
   line-height: 1.5;
 }
 
+.mainGrid, html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.mainGrid{ 
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas:  
+  "header-wraper header-wraper header-wraper"
+  "assideLeft portfolio-wrapper assideRight"
+  "Footer Footer Footer"                                                                   
+
+ }
+
+ /* no display ? */
+ .page-banner-main {
+  background-image: url(../images/02-hero-bg.jpg);
+   }
+
+ #header-wraper {
+  grid-area: header-wraper;
+  background-color: aquamarine; 
+  
+ }
+
+
+
+ #assideLeft {
+  grid-area: assideLeft;
+  background-color: beige;
+  
+ }
+ #aassideRight {
+  grid-area: assideRight;
+  background-color: rgb(11, 146, 236);
+   }
+
+#portfolio-wrapper{
+  grid-area: portfolio-wrapper;
+  background-color: aqua;
+}
+#Footer {
+  grid-area: Footer ;
+  background-color:blueviolet;
+}
+
+/* NAV section */ 
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+#navBar h1 { /*name */
+  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:xx-large;
+  font-weight: 1000;
+  color: white;
+  
+} 
+#navigationGroup {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-evenly;
+}
+#navigationGroup a  {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* NAV section */
+
+
+
+
+
+
+
+ /*------------------- bylo -------------- */
 h1,
 h2,
 h3,
@@ -20,4 +102,5 @@ h6 {
 
 p {
   margin: 0;
+  color:yellowgreen;
 }
