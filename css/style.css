@@ -3,14 +3,14 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  
 }
 
 .mainGrid, html, body {
   height: 100%;
+  min-width: 400px;
   margin: 0;
 }
-
-
 
 .mainGrid{ 
   display: grid;
@@ -23,18 +23,17 @@ body {
   "Footer Footer Footer"                                                                   
 
  }
+/* mainGrid elements --------------------------- */
 
- /* no display ? */
- .page-banner-main {
-  background-image: url(../images/02-hero-bg.jpg);
-   }
+
 
  #header-wraper {
+  
   grid-area: header-wraper;
   background-color: aquamarine; 
   
+  
  }
-
 
 
  #assideLeft {
@@ -56,30 +55,65 @@ body {
   background-color:blueviolet;
 }
 
+/* mainGrid elements --------------------------- */
+
+
+ /* no display ? */
+ .page-banner-main {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/02-hero-bg.jpg);
+
+ }
+
 /* NAV section */ 
 
-#navBar {
-  display: flex;
+#myName {
+  display:block;
   flex-direction: row;
-  margin: 0px 5%;
-}
+  align-items: flex-end;
+  position: inherit;
 
-#navBar h1 { /*name */
+  }
+
+#myName h1 { /*name */
   width: 50%;
   font-family: 'Times New Roman', Times, serif;
-  font-size:xx-large;
-  font-weight: 1000;
+  font-size: 200%;
+  padding: 2%;
   color: white;
+  background-color: darkblue;
+ 
   
-} 
+ } 
+
+ /* about me */ 
 #navigationGroup {
   display: flex;
-  align-items:flex-end;
-  justify-content: space-evenly;
-}
-#navigationGroup a  {
+  justify-content:right;
+  position: inherit;
+  gap: 1%;
+  padding-right: 5%;
+  
+  
+  
+
+  
+  
+ }
+
+#navigationGroup a  { /*kursor change on About */
   cursor: pointer;
   text-decoration: none;
+  
+  color: white;
+  background-color: darkblue; /* buttons */
+  border-radius: 3rem;
+  padding: 1%;
+  margin: 1%;
+  
+  
 }
 
 /* NAV section */
@@ -91,7 +125,9 @@ body {
 
 
  /*------------------- bylo -------------- */
-h1,
+h1 {
+  font-size: xx-large;
+},
 h2,
 h3,
 h4,
