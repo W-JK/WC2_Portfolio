@@ -1,142 +1,132 @@
-body {
+* {
+  
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-  
 }
 
-.mainGrid, html, body {
-  height: 100%;
-  min-width: 400px;
-  margin: 0;
+body {
+  font-family: 'Lato', Arial, sans-serif;
 }
 
-.mainGrid{ 
-  display: grid;
-  min-height: 100%;
-  grid-template-rows: 20% 60% 20%;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-areas:  
-  "header-wraper header-wraper header-wraper"
-  "assideLeft portfolio-wrapper assideRight"
-  "Footer Footer Footer"                                                                   
-
- }
-/* mainGrid elements --------------------------- */
-
-
-
- #header-wraper {
-  
-  grid-area: header-wraper;
-  background-color: aquamarine; 
-  
-  
- }
-
-
- #assideLeft {
-  grid-area: assideLeft;
-  background-color: beige;
-  
- }
- #aassideRight {
-  grid-area: assideRight;
-  background-color: rgb(11, 146, 236);
-   }
-
-#portfolio-wrapper{
-  grid-area: portfolio-wrapper;
-  background-color: aqua;
-}
-#Footer {
-  grid-area: Footer ;
-  background-color:blueviolet;
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* mainGrid elements --------------------------- */
-
-
- /* no display ? */
- .page-banner-main {
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../images/02-hero-bg.jpg);
-
- }
-
-/* NAV section */ 
-
-#myName {
-  display:block;
-  flex-direction: row;
-  align-items: flex-end;
-  position: inherit;
-
-  }
-
-#myName h1 { /*name */
-  width: 50%;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 200%;
-  padding: 2%;
-  color: white;
-  background-color: darkblue;
- 
-  
- } 
-
- /* about me */ 
-#navigationGroup {
+header {
+  width: 100%;
   display: flex;
-  justify-content:right;
-  position: inherit;
-  gap: 1%;
-  padding-right: 5%;
-  
-  
-  
+  align-items: center;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+  height: 70px;
+}
 
-  
-  
- }
+header nav {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
-#navigationGroup a  { /*kursor change on About */
-  cursor: pointer;
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  
+  list-style: none;
+  margin-right: 20px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
   text-decoration: none;
-  
-  color: white;
-  background-color: darkblue; /* buttons */
-  border-radius: 3rem;
-  padding: 1%;
-  margin: 1%;
-  
-  
+  text-transform: uppercase;
 }
 
-/* NAV section */
-
-
-
-
-
-
-
- /*------------------- bylo -------------- */
-h1 {
-  font-size: xx-large;
-},
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.container {
+  width: 100%;
+  display: flex;
 }
 
-p {
-  margin: 0;
-  color:yellowgreen;
+.container .container-left {
+  height: 100%;
+  border-right: 2px solid purple;
+  padding: 20px 15px;
+  width: 35%;
+}
+
+.container .container-left h2 {
+  font-size: 32px;
+  line-height: 44px;
+  color: purple;
+}
+
+.container .container-right {
+  width: 65%;
+  float: left;
+  padding: 20px 15px;
+}
+
+.container .container-right img {
+  height: auto;
+  width: 20%;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+.container .container-right p {
+  float: left;
+}
+
+.projects .container-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex-basis: calc(50% - 10px);
+  background-color: aqua;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.project:first-child {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+.project:nth-child(2n + 1) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .container {
+      flex-direction: column;
+  }
+  .container .container-left {
+      width: 100%;
+      border-right: none;
+      border-bottom: 2px solid purple;
+  }
+  .container .container-right {
+      width: 100%;
+  }
+  .project {
+      flex-basis: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      margin-right: 0px;
+  }
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+  .name {
+      margin-bottom: 7px;
+  }
 }

@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>WJK Web Development </title>
-  <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WJK Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <main id="page-wrapper" class="mainGrid"> 
-  <!-- Header ----------------------------------------------------------- -->
-
-
-     <!---   Nav Bar  -->
-  <header id="header-wraper" class="header">  
-
-    <div id="myName" >
-      <h1>W. J. Koloska </h1>
-    </div> 
-
-    <nav id="navigationGroup" class="main-navigation">
-        <a href="#"> About Me </a>     
-        <a href="#"> My Projects </a>  
-        <a href="#"> Contact Me  </a>  
-        <a href="#"> Resume </a>      
-    </nav> 
-
- 
-  <!-- Nav Bar     --> 
-      <div id="pageBanner"  class="page-banner-main">  </div>
-      
- 
-
-
-
-
-    
-
-    
-    
-    
-    
+    <header>
+        <div class="container">
+            
+            <nav class="main-nav">
+                <div class="name">
+                    <h1>Wojtek Koloska</h1>
+                </div>
+                <ul>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!-- Header end ------------------------------------------------------------  -->
-
-    <div id="assideLeft" class="assideLeft"> Left  </div>
-    <div id="portfolio-wrapper" class="portfolioGrid">  Portfolio   </div>
-    <div id="assideRight" class="assideRight"> Right  </div>
-    <footer id="Footer" class="Footer">  <p> Footer </p>   </footer>     
-   
-  </main>
-
-
-  
- 
+    <main>
+        <!-- section.klasa i tab -->
+        <section class="about">
+            <div class="container">
+                <div class="container-left">
+                    <h2>About me</h2>
+                </div>
+                <div class="container-right">
+                    
+                    <p>
+                        <img src="./assets/dowód_IMG_0293 kopia2grey.jpg" alt="My face">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque porta varius. Mauris congue urna metus, sit amet rutrum lectus tempus quis. In tincidunt quis risus non consectetur. Quisque sagittis condimentum ex. Cras gravida at tortor ac varius. Maecenas eu gravida lorem. Vivamus nibh neque, luctus vitae dignissim sed, tempus nec lacus. Integer ultricies suscipit luctus. Fusce ultricies, nunc non tempor ullamcorper, nisl tortor condimentum libero, id rutrum lacus est quis lectus. Vestibulum lobortis justo at efficitur imperdiet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <div class="container-left"><h2>Projects</h2></div>
+                <div class="container-right">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="container-left"></div>
+                <div class="container-right"></div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
-
 </html>
