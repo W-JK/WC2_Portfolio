@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: blanchedalmond;
+  background-image: url(../assets/02-hero-bg.jpg);
   height: 70px;
 }
 
