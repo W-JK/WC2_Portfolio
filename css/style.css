@@ -24,6 +24,10 @@ header {
   height: 70px;
 }
 
+.name h1 {
+  color: white;
+}
+
 header nav {
   display: flex;
   width: fit-content;
@@ -55,7 +59,7 @@ header nav ul li a {
 
 .container .container-left {
   height: 100%;
-  border-right: 2px solid purple;
+  border-right: 2px solid rgb(3, 27, 71);
   padding: 20px 15px;
   width: 35%;
 }
@@ -63,7 +67,7 @@ header nav ul li a {
 .container .container-left h2 {
   font-size: 32px;
   line-height: 44px;
-  color: purple;
+  color: rgb( 3, 27, 71);
 }
 
 .container .container-right {
