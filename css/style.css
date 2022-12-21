@@ -119,6 +119,7 @@ header nav ul li a {
   background-size: cover;
   background-repeat: no-repeat; 
   background-image: url(../assets/02-space_holder\ left.jpg); /* space holder left */
+
 }
 
 
@@ -171,6 +172,8 @@ header nav ul li a {
 
 #Automation {
   background-image: url(../assets/IMG_0145.JPG);
+  
+
 }
 
 #Horiseon {
@@ -183,6 +186,7 @@ header nav ul li a {
 #Calculator{
   background-image: url(../assets/02-portfolio-2.jpg );
 }
+
 
 
 
