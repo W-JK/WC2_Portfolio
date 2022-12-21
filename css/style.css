@@ -94,21 +94,87 @@ header nav ul li a {
   flex-wrap: wrap;
 }
 
+/* projects - all */
+
 .project {
   flex-basis: calc(50% - 10px);
   background-color: aqua;
   height: 300px;
   margin-bottom: 20px;
   margin-right: 20px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-image: url(../assets/02-space_holder\ left.jpg); /* space holder left */
 }
+
+
+/* ------------------ Main Project - custom ----------------------- */ 
 .project:first-child {
   flex-basis: 100%;
   margin-bottom: 20px;
-}
-.project:nth-child(2n + 1) {
-  margin-right: 0;
+  
+  /* first child - cosmetics */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  
+  
+
 }
 
+/* ----------------  secondary project's - custom ---------------- */
+
+
+
+/* other children's - (2n+1) cosmetics */ 
+.project:nth-child(2n + 1) {
+  margin-right: 0;
+  background-image: url(../assets/02-space_holder\ right.jpg);
+}
+
+
+/* ------------- project headings ------------ */
+
+.project-heading {
+  background-color: black;
+  text-align: center;  
+  color: white;
+  font-size: 16px;
+  border-bottom: 5px solid #FF6200;
+   }
+
+.project:first-child .project-heading {
+ 
+  background-color: black;
+  text-align: center;  
+  color: white;
+  font-size: 26px;
+  border-bottom:  5px solid #FF6200; }
+  
+
+/* ------ single project spec - by project ID ------ */ 
+
+#Automation {
+  background-image: url(../assets/IMG_0145.JPG);
+}
+
+#Horiseon {
+  background-image: url(../assets/challenge-WC1.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#Calculator{
+  background-image: url(../assets/02-portfolio-2.jpg );
+}
+
+
+
+/* ----------------- Media Query ------------ */ 
 @media screen and (max-width: 768px) {
  
   .container {
@@ -127,6 +193,7 @@ header nav ul li a {
       height: 200px;
       margin-bottom: 20px;
       margin-right: 0px;
+              
   }
   nav {
       flex-direction: column;
