@@ -7,6 +7,12 @@
 
 .name h1 {
   color: white;
+  font-size: x-large;
+}
+
+a{
+  color:aliceblue;
+   
 }
 
 body {
@@ -17,6 +23,7 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+  
 }
 
 header {
@@ -24,9 +31,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(../assets/02-hero-bg.jpg);
-  height: 70px;
-}
+  min-height: 100px;
+  height: 20vh;
+  background-image: url(../assets/wrzosowisko.jpg);
+  background-position: bottom;
+  background-size:cover;
+  background-repeat: no-repeat; } 
+
+  
 
 
 
